@@ -61,3 +61,82 @@
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
+
+
+
+
+
+
+
+
+
+.choco-active-left
+{
+	transform: translate(30%);
+	border: none;
+	background-color: rgba(73, 244, 70, 0.5);
+}
+
+.choco-active-right
+{
+	transform: translate(-30%);
+	border: none;
+	background-color: rgba(73, 244, 70, 0.5);
+}
+
+.choco-active-left:hover
+{
+	background-color: rgba(73, 244, 70, 0.5);
+}
+
+.choco-active-right:hover 
+{
+	background-color: rgba(73, 244, 70, 0.5);
+}
+
+.choco-inactive
+{
+	visibility: hidden;
+}
+
+@keyframes choco-active-left
+{
+	from 
+	{
+		width: 40%;
+	}
+	to 
+	{
+		width: 100%;
+		border: none;
+		background-color:rgba(73, 244, 70, 0.5);
+	}
+}
+
+@keyframes choco-active-right 
+{
+	from 
+	{
+		width: 40%;
+	}
+	to 
+	{
+		width: 100%;
+		border: none;
+		background-color: rgba(73, 244, 70, 0.5);
+	}
+}
+
+@keyframes choco-inactive 
+{
+	from 
+	{
+		transform: scale(1);
+	}
+	to 
+	{
+		transform: scale(0.01);
+		border: none;
+		visibility: hidden;
+	}
+}
