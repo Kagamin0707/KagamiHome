@@ -8,7 +8,7 @@
 .block-image-background
 {
     height: 600px;
-    width: 100%;
+    width: 98%;
     object-fit: cover;
     filter: blur(5px);
     opacity: 0.5;
@@ -16,8 +16,19 @@
     z-index: -1;
 }
 
+.block-image-foreground
+{
+    transition: all 600ms;
+}
+
+.block-image-foreground:hover
+{
+    transform: scale(1.2) rotate(-5deg);
+}
+
 .block-color-background
 {
+    height: 100%;
     width: 100%;
     filter: blur(2px);
     opacity: 0.8;
@@ -36,4 +47,10 @@
     border: 1px solid black;
     border-radius: 10px;
     border-color: #000000;
+    transition: all 300ms;
+}
+
+.block-button:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
 }

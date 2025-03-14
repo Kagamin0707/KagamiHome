@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem
+    gap: 48px;
 }
 
 .page-top-bar
@@ -18,7 +18,8 @@
 
 .page-block
 {
-    height: 600px;
+    padding: 72px;
+    height: max-content;
     justify-content: space-around;
 }
 
